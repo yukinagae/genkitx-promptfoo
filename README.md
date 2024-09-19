@@ -24,12 +24,13 @@
 
 </br>
 
-**`genkitx-promptfoo`** is a community plugin for using Promptfoo with [Firebase Genkit](https://github.com/firebase/genkit).
+**`genkitx-promptfoo`** is a community plugin for using [Promptfoo](https://github.com/promptfoo/promptfoo) with [Firebase Genkit](https://github.com/firebase/genkit).
 Built by [**Yuki Nagae**](https://github.com/yukinagae).
 
-This Genkit plugin allows to use Promptfoo.
+This Genkit plugin allows to use [Promptfoo](https://github.com/promptfoo/promptfoo).
 
-> [!WARNING] > **This version is in preview and may have API changes and critical bugs. Use it for prototypes or hobby projects, not in production**.
+> [!WARNING]
+> **This version is in preview and may have API changes and critical bugs. Use it for prototypes or hobby projects, not in production**.
 
 ## Installation
 
