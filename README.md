@@ -1,7 +1,4 @@
-<div style="display: flex; align-items: flex-start;">
-  <img src="./assets/genkit.svg" title="Firebase Genkit" alt="Firebase Genkit Logo" style="width: 150px;">
-  <img src="./assets/promptfoo.svg" title="Promptfoo" alt="Promptfoo Logo" style="width: 150px;">
-</div>
+![Firebase Genkit + Promptfoo](https://github.com/yukinagae/genkitx-promptfoo/blob/main/assets/genkit-promptfoo.png?raw=true)
 
 <h1>
    Firebase Genkit <> Promptfoo Plugin
