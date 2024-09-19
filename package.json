@@ -1,0 +1,38 @@
+{
+  "name": "genkitx-promptfoo",
+  "description": "Genkit AI framework plugin for Promptfoo.",
+  "keywords": [
+    "genkit",
+    "genkit-plugin",
+    "promptfoo",
+    "eval",
+    "ai",
+    "genai",
+    "generative-ai"
+  ],
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yukinagae/genkitx-promptfoo.git"
+  },
+  "author": "Yuki Nagae",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "npm run build:clean && tsc",
+    "build:clean": "rm -rf ./lib",
+    "build:watch": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "check": "biome check ./src",
+    "fix": "biome check --write ./src"
+  },
+  "dependencies": {
+    "@genkit-ai/ai": "^0.5.13",
+    "@genkit-ai/core": "^0.5.13",
+    "promptfoo": "^0.89.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.1",
+    "typescript": "^5.6.2"
+  }
+}

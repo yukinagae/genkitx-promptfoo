@@ -1,0 +1,9 @@
+# General build + OS files
+node_modules
+lib
+dist
+.vscode
+.DS_Store
+package-lock.json
+*.tgz
+**/*.env
