@@ -1,4 +1,4 @@
-name: Build & Test
+name: Format & Build & Test
 
 on:
   push:
@@ -22,5 +22,6 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: npm ci
+      - run: npm run fix
       - run: npm run build
       - run: npm run test
