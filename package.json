@@ -25,7 +25,8 @@
     "typecheck": "tsc --noEmit",
     "check": "biome check ./src ./tests",
     "fix": "biome check --write ./src ./tests",
-    "test": "tsx --test ./tests/*_test.ts"
+    "test": "tsx --test ./tests/*_test.ts",
+    "publish": "npm publish --access public"
   },
   "dependencies": {
     "@genkit-ai/ai": "^0.5.13",
