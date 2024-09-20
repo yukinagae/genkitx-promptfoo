@@ -23,8 +23,9 @@
     "build:clean": "rm -rf ./lib",
     "build:watch": "tsc --watch",
     "typecheck": "tsc --noEmit",
-    "check": "biome check ./src",
-    "fix": "biome check --write ./src"
+    "check": "biome check ./src ./tests",
+    "fix": "biome check --write ./src ./tests",
+    "test": "tsx --test ./tests/*_test.ts"
   },
   "dependencies": {
     "@genkit-ai/ai": "^0.5.13",
@@ -33,6 +34,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.2",
+    "tsx": "^4.19.1",
     "typescript": "^5.6.2"
   }
 }
