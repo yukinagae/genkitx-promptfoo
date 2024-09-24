@@ -42,7 +42,7 @@ Install the plugin in your project with your favorite package manager:
 ### Configuration
 
 ```typescript
-import promptfooEval from 'genkitx-promptfoo';
+import { promptfooEval } from 'genkitx-promptfoo';
 
 configureGenkit({
   plugins: [
