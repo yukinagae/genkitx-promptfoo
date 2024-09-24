@@ -16,5 +16,6 @@
     "typeRoots": ["./node_modules/@types"],
     "noEmit": true
   },
-  "compileOnSave": true
+  "compileOnSave": true,
+  "include": ["src"]
 }
