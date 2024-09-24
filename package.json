@@ -51,9 +51,5 @@
   },
   "files": [
     "lib"
-  ],
-  "publishConfig": {
-    "provenance": true,
-    "access": "public"
-  }
+  ]
 }
