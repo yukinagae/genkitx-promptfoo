@@ -18,7 +18,7 @@
     "@genkit-ai/flow": "^0.5.13",
     "@genkit-ai/googleai": "^0.5.13",
     "express": "^4.21.0",
-    "genkitx-promptfoo": "^0.1.2",
+    "genkitx-promptfoo": "^0.1.3",
     "zod": "^3.23.8"
   },
   "devDependencies": {
