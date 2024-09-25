@@ -87,7 +87,7 @@ export async function promptfooScore(
   } = {
     type: metric.type,
     ...(metric.provider && { provider: metric.provider }),
-    ...(metric.threshold && { provider: metric.threshold }),
+    ...(metric.threshold && { threshold: metric.threshold }),
   };
 
   // override value if metric.value is provided
