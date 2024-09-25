@@ -30,7 +30,7 @@
   "dependencies": {
     "@genkit-ai/ai": "^0.5.13",
     "@genkit-ai/core": "^0.5.13",
-    "promptfoo": "^0.89.2"
+    "promptfoo": "^0.90.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.2",
