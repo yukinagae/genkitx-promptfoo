@@ -3,20 +3,29 @@ import * as z from 'zod';
 import { generate } from '@genkit-ai/ai';
 import { configureGenkit } from '@genkit-ai/core';
 import { defineFlow, startFlowsServer } from '@genkit-ai/flow';
-import { googleAI } from '@genkit-ai/googleai';
-
-import { gemini15Flash } from '@genkit-ai/googleai';
+import { gemini15Flash, vertexAI } from '@genkit-ai/vertexai';
 
 import { promptfooEval } from 'genkitx-promptfoo';
 
 configureGenkit({
   plugins: [
-    googleAI(),
+    vertexAI(),
     promptfooEval({
       metrics: [
         {
           type: 'icontains',
-          value: 'sushi',
+          value: 'cheese',
+        },
+        {
+          type: 'similar',
+          value: 'Aloha, World!',
+          threshold: 0.8,
+          provider: 'vertex:embedding:text-embedding-004',
+        },
+        {
+          type: 'llm-rubric',
+          value: 'It is referring to the ingredients of food.',
+          provider: 'vertex:gemini-1.5-flash',
         },
       ],
     }),
