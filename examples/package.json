@@ -24,7 +24,7 @@
     "@genkit-ai/googleai": "^0.5.13",
     "@genkit-ai/vertexai": "^0.5.13",
     "express": "^4.21.0",
-    "genkitx-promptfoo": "^0.1.8",
+    "genkitx-promptfoo": "^0.1.11",
     "zod": "^3.23.8"
   },
   "devDependencies": {

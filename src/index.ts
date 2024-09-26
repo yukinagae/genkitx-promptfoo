@@ -108,19 +108,23 @@ export async function promptfooScore(
   });
   const score = summary.results[0].score;
   if (summary.results[0].error) {
+    const errorReason = summary.results[0].error;
     return {
       score: score,
-      error: 'Assertion failed',
       details: {
-        reasoning: summary.results[0].error, // error reason
+        reasoning: `Assertion failed: ${errorReason}`, // error reason
       },
     };
   }
+  const successReason =
+    summary.results[0].gradingResult?.componentResults?.[0]?.reason;
   return {
     score: score,
     details: {
       reasoning:
-        summary.results[0].gradingResult?.componentResults?.[0]?.reason, // success reason
+        successReason === 'Assertion passed'
+          ? successReason
+          : `Assertion passed: ${successReason}`, // success reason
     },
   };
 }

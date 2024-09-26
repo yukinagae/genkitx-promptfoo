@@ -46,9 +46,8 @@ describe('promptfooScore', () => {
       },
       expected: {
         score: 0,
-        error: 'Assertion failed',
         details: {
-          reasoning: 'Expected output to contain "Hello"',
+          reasoning: 'Assertion failed: Expected output to contain "Hello"',
         },
       },
     },
