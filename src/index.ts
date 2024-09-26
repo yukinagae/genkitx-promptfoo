@@ -86,15 +86,10 @@ export async function promptfooScore(
     threshold?: number;
   } = {
     type: metric.type,
+    ...(metric.value && { value: metric.value }),
     ...(metric.provider && { provider: metric.provider }),
     ...(metric.threshold && { threshold: metric.threshold }),
   };
-
-  // override value if metric.value is provided
-  assertion.value = d.reference as AssertionValue;
-  if (metric.value) {
-    assertion.value = metric.value;
-  }
 
   const summary = await promptfoo.evaluate({
     prompts: [d],
