@@ -28,8 +28,8 @@
     "test": "tsx --test ./tests/*_test.ts"
   },
   "dependencies": {
-    "@genkit-ai/ai": "^0.5.13",
-    "@genkit-ai/core": "^0.5.13",
+    "@genkit-ai/ai": "^0.5.14",
+    "@genkit-ai/core": "^0.5.14",
     "promptfoo": "^0.90.0"
   },
   "devDependencies": {
