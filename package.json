@@ -33,7 +33,7 @@
     "promptfoo": "0.91.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.9.3",
+    "@biomejs/biome": "1.9.4",
     "@types/node": "^22.6.1",
     "tsup": "^8.3.0",
     "tsx": "^4.19.1",
