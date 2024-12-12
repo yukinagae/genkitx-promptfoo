@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@genkit-ai/ai": "^0.5.14",
-    "@genkit-ai/core": "^0.5.14",
+    "@genkit-ai/core": "^0.9.12",
     "promptfoo": "0.91.3"
   },
   "devDependencies": {
